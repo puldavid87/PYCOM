@@ -1,12 +1,18 @@
 # ANALOG-DIGITAL * DIGITAL-ANALOG CONVERTER
 ## Theory:
+
+![Megodenas, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/5/5a/Conversion_AD_DA.png)
+
 ### Functionality:
 
 ADC:
 
-To describe a phenomenon, it is necessary to represent it the most of the cases in voltage. Then, this signal can be scaled to finite numbers called registers. Generally, these registers can be 10,12, and 16 bits.  
+To describe a phenomenon, in most of the cases it is necessary to represent it in voltage, which can be measured. Then, this signal can be scaled to finite numbers called registers. Generally, these registers can be 10,12, and 16 bits, meaning they can represent e.g. $2^{10} = 1024$ different values
 
 DAC: 
+
+![Thewrightstuff, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/b/b8/Duty_Cycle_Examples.png)
+
 Most used in pulse-width modulation. The duty cycle of a periodic signal is the relative width of its positive part about the period. Frequency can be from 125Hz to 20kHz in steps of 122Hz. amplitude is an integer specifying the tone amplitude to write the DAC pin. Amplitude value represents:
 
 0 is 0dBV (~ 3Vpp at 600 Ohm load)
