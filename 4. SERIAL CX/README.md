@@ -13,11 +13,11 @@ In this course, serial communication is focused on sending messages to the compu
 
 
 ### Libraries:
-```
+```python
 from machine import UART #library 
 ```
 ### Code Structures:
-```
+```python
 uart = UART(0, baudrate=115200)        # UART configuration
 data=uart.read()        # receive data    print(data)                            # send data
 ```

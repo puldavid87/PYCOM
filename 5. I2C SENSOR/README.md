@@ -8,11 +8,11 @@ In this course, i2c communication is focused on sending messages between sensors
 
 
 ### Libraries:
-```
+```python
 from machine import I2C
 ```
 ### Code Structures:
-```
+```python
 i2c = I2C(2) #
 ```
 ## Examples:
