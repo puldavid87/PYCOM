@@ -27,12 +27,12 @@ PinOut:
 ![Esta es una imagen](https://github.com/puldavid87/PYCOM/blob/main/fipy-pinout.png)
 
 ### Libraries:
-```
+```python
 from machine import ADC
 import time
 ```
 ### Code Structures:
-```
+```python
 adc = machine.ADC()             # create an ADC object
 apin = adc.channel(pin='P16')   # create an analog pin on P16
 dac = machine.DAC('P22')        # create a DAC object

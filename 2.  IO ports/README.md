@@ -16,19 +16,19 @@ PinOut:
 ![Esta es una imagen](https://github.com/puldavid87/PYCOM/blob/main/fipy-pinout.png)
 
 ### Libraries:
-```
+```python
 from machine import Pin
 import time
 ```
 ### Code Structures:
-```
+```python
 variable= Pin('PIN', mode=Pin.MODE)                 variable.value(x)                     time.sleep(s)
 PIN-> selected pin (P8,P9)                             x-> 1: HIGH                          s-> stopping the machine in seconds
        MODE-> OUT                                      0: LOW                               time.sleep_ms(ms) 
               IN                                                                                    ms -> stopping the machine in miliseconds
 ```
 ## Examples:
-```
+
 io1.py -> Simple Output ports configuration (Hello World..!!)
 io2.py -> For and If cycles with output ports configuration
 io3.py -> Simple Input configuration
