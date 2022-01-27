@@ -188,6 +188,7 @@ for layerNum, layer in enumerate(model.layers):
 
 ### Export layers and neurons
 
+```
 Output from spyder call 'get_namespace_view':
 0B -> L1N0: 0.0
 0B -> L1N1: -0.046640533953905106
@@ -217,7 +218,7 @@ L1N2                   -> L2N2 = -0.956559419631958
 L2N0                   -> L3N0 = 1.582396149635315
 L2N1                   -> L3N0 = -0.8516733646392822
 L2N2                   -> L3N0 = -0.6935510635375977
-
+```
 ## Step 4: Real tests ## 
 
 The model can be exported in an external file .py to call it in the main function to run it in the electronic device.
