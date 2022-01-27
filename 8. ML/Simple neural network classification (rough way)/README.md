@@ -119,7 +119,7 @@ plt.show()
 
 To see and understand better, you can check this: [Neural Network](https://keras.io/).
 
-### SVM model ###
+### NN model ###
 ``` python
 #Neural network model 
 # The main idea is train a model with less layers and neurons.
