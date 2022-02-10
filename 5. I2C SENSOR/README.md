@@ -17,5 +17,6 @@ i2c = I2C(2) #
 ```
 ## Examples:
 ```
-cx1.py -> 
+cx1.py -> Whitout library
+cx2.py -> With librarby: lib folder
 ```
