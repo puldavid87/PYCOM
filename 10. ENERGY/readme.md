@@ -56,7 +56,7 @@ You can know how long each instruction takes to the memory process it
 ``` python
 import time
 machinestarts=time.ticks_ms()
-instructions
+#instructions
 machinefinishes=time.ticks_ms()-machinestarts
 ```
 ## Reading battery voltage ##
