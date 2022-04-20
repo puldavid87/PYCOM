@@ -42,6 +42,6 @@ while True:
     print("machine time "+ str(machinefinishes))
     print("sleep :( ")
     time.sleep(5)
-    machine.deepsleep(1000*time_to_sleep)
+    machine.deepsleep(1000*time_to_sleep) # convert to seconds
     print("sleeping_time"+ (machinefinishes-str(machinefinishes))) #never reads this line
     
