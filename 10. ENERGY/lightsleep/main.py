@@ -5,10 +5,6 @@
 # This software is licensed under the GNU GPL version 3 or any
 # later version, with permitted additional terms. For more information
 # see the Pycom Licence v1.0 document supplied with this file
-# Code: project -> Binary classification algorithm
-# IoT course
-#
-# Thanks Niels..!!
 #
 
 
@@ -23,7 +19,7 @@ i2c = I2C(2) # create and use default PIN assignments (P9=SDA, P10=SCL)
 # but the bitbanged software bus (2) works
 # Yay for libraries!
 sensor = SCD30(i2c, 0x61)
-time_to_sleep=5
+time_to_sleep=30
 while True:
     # Wait for sensor data to be ready to read (by default every 2 seconds)
     machinestarts=time.ticks_ms()
