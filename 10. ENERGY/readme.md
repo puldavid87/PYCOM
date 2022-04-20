@@ -10,7 +10,7 @@ There are several methods to make your device sleep.
 [Pycom docs](https://docs.pycom.io/tutorials/basic/sleep/)
 ### time.sleep() ##
 
-This instruction freezes memory *x* time. Therefore the system does not save energy. 
+This instruction freezes (block the program counter) memory *t* time. Therefore the system does not save energy. 
 
 ``` python
 import time
@@ -24,10 +24,20 @@ time.sleep_us(10) #sleep 10 microseconds
 ```
 This instruction 
 
-### Light.sleep() ### 
-command will put the controller into a light sleep mode. WiFi and BLE are switched off, but the main CPU and RAM are still running. the LoRa, SigFox and LTE modems are stopped as well and have to be re-initialized after wakeup. The controller will continue running the code after waking up.
+### machine.sleep() ### 
+command will put the controller into a light sleep mode. WiFi and BLE are switched off, but the main CPU and RAM are still running. the LoRa, SigFox and LTE modems are stopped as well and have to be re-initialized after wakeup. The controller will continue running the code after waking up. It reduces the RAM consumption.
 
 ``` python
+import machine
 machine.sleep(1000*t, False) # t-> time in seconds to seelp
 ```
 **Setting the second argument to True will restore the WiFi and BLE after wakeup.**
+
+### machine.deepsleep() ###
+Deepsleep disables, next to the lightsleep, the main CPU and RAM. This leaves only a low power coprocessor and RTC timer running. After waking up, the board will start again at boot.py, just like with pressing the reset button. Restart memories and program counter.
+
+``` python
+import machine
+machine.deepsleep(1000*t, False) # t-> time in seconds to seelp
+```
+** Using deepsleep() will also stop the USB connection. Be wary of that when trying to upload new code to the device!. If you are testing this mode, be sure to use *t* for at least 30 seconds to update the firmware without issues.** 
