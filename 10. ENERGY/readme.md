@@ -50,3 +50,14 @@ machine.pin_sleep_wakeup(wake_pins, machine.WAKEUP_ANY_HIGH, True)
 ```
 
 **be careful with the PULL_DOWN AND WAKE UP ANY HIGH, sometimes people use PULL UP and WAKEUP_ANY_HIGH and the system restarts constantly, Do you know why?**
+
+## Reading battery voltage ##
+Each shield allows you to read the battery voltage, though in a slightly different way.
+``` python
+from machine import ADC
+adc = ADC()
+bat_voltage = adc.channel(attn=ADC.ATTN_11DB, pin='P16')
+vbat = bat_voltage.voltage()
+# note that the expansionboard 2.0 has a voltage divider of 115K / 56K to account for
+print('battery voltage:', vbat*1,5, 'mV')
+```
