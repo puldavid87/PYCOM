@@ -44,3 +44,7 @@ machine.deepsleep(1000*t, False) # t-> time in seconds to seelp, also you can us
 
 Sometimes, we want to know the reason the board woke up, to differentiate the difference between pressing the reset button and waking up from sleep. We can also determine the time left on the sleep timer.
 
+``` python
+wake_pins = [Pin('P10', mode=Pin.IN, pull=Pin.PULL_DOWN)]
+machine.pin_sleep_wakeup(wake_pins, machine.WAKEUP_ANY_HIGH, True)
+```
