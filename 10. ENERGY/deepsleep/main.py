@@ -26,7 +26,7 @@ i2c = I2C(2) # create and use default PIN assignments (P9=SDA, P10=SCL)
 # but the bitbanged software bus (2) works
 # Yay for libraries!
 sensor = SCD30(i2c, 0x61)
-time_to_sleep=20
+time_to_sleep=30
 
 while True:
     print("awake :)")
