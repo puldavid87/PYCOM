@@ -5,10 +5,6 @@
 # This software is licensed under the GNU GPL version 3 or any
 # later version, with permitted additional terms. For more information
 # see the Pycom Licence v1.0 document supplied with this file
-# Code: project -> Binary classification algorithm
-# IoT course
-#
-# Thanks Niels..!!
 #
 
 
@@ -19,6 +15,7 @@ from machine import Pin
 from machine import I2C
 from scd30 import SCD30
 pycom.heartbeat(False)  # disable the heartbeat LED
+#lopy wakes up by time and wake pin
 wake_pins = [Pin('P10', mode=Pin.IN, pull=Pin.PULL_DOWN)]
 machine.pin_sleep_wakeup(wake_pins, machine.WAKEUP_ANY_HIGH, True)
 i2c = I2C(2) # create and use default PIN assignments (P9=SDA, P10=SCL)
@@ -46,5 +43,5 @@ while True:
     print("sleep :( ")
     time.sleep(5)
     machine.deepsleep(1000*time_to_sleep)
-    print("sleeping_time"+ (machinefinishes-str(machinefinishes)))
+    print("sleeping_time"+ (machinefinishes-str(machinefinishes))) #never reads this line
     
