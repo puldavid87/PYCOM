@@ -54,6 +54,7 @@ machine.pin_sleep_wakeup(wake_pins, machine.WAKEUP_ANY_HIGH, True)
 ### time.ticks() ### 
 You can know how long each instruction takes to the memory process it
 ``` python
+import time
 machinestarts=time.ticks_ms()
 instructions
 machinefinishes=time.ticks_ms()-machinestarts
