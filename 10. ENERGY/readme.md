@@ -71,4 +71,8 @@ print('battery voltage:', vbat*1,5, 'mV')
 ```
 ## Assignments ## 
 * Test each example with the CO2 sensor to check how sleep modes and reading the battery voltage work.
-* 
+* Can you determine how long the WiFi/Lora communication and the sensor take to be stable?
+* What is the minimum time in light sleep to get stable sensor reading? Do you send the first sensor lecture to the cloud?
+* What is the minimum time in light sleep to get stable sensor reading?
+* Compare the sensor readings when the system goes to sleep and when it is not. Do you notice any change?
+
