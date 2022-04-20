@@ -67,7 +67,7 @@ adc = ADC()
 bat_voltage = adc.channel(attn=ADC.ATTN_11DB, pin='P16')
 vbat = bat_voltage.voltage()
 # note that the expansionboard 2.0 has a voltage divider of 115K / 56K to account for
-print('battery voltage:', vbat*1,5, 'mV')
+print('battery voltage:', vbat*1.5, 'mV')
 ```
 ## Assignments ## 
 * Test each example with the CO2 sensor to check how sleep modes and reading the battery voltage work.
