@@ -10,7 +10,7 @@ There are several methods to make your device sleep.
 [Pycom docs](https://docs.pycom.io/tutorials/basic/sleep/)
 ### time.sleep() ##
 
-This instruction freezes memory x time. Therefore the system does not save energy. 
+This instruction freezes memory *x* time. Therefore the system does not save energy. 
 
 ``` python
 import time
