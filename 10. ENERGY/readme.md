@@ -28,6 +28,6 @@ This instruction
 command will put the controller into a light sleep mode. WiFi and BLE are switched off, but the main CPU and RAM are still running. the LoRa, SigFox and LTE modems are stopped as well and have to be re-initialized after wakeup. The controller will continue running the code after waking up.
 
 ``` python
-machine.sleep(1000*t, False)
+machine.sleep(1000*t, False) # t-> time in seconds to seelp
 ```
 **Setting the second argument to True will restore the WiFi and BLE after wakeup.**
