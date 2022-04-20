@@ -38,6 +38,9 @@ Deepsleep disables, next to the lightsleep, the main CPU and RAM. This leaves on
 
 ``` python
 import machine
-machine.deepsleep(1000*t, False) # t-> time in seconds to seelp
+machine.deepsleep(1000*t, False) # t-> time in seconds to seelp, also you can use without time.
 ```
-** Using deepsleep() will also stop the USB connection. Be wary of that when trying to upload new code to the device!. If you are testing this mode, be sure to use *t* for at least 30 seconds to update the firmware without issues.** 
+**Using deepsleep() will also stop the USB connection. Be wary of that when trying to upload new code to the device!. If you are testing this mode, be sure to use *t* for at least 30 seconds to update the firmware without issues.** 
+
+Sometimes, we want to know the reason the board woke up, to differentiate the difference between pressing the reset button and waking up from sleep. We can also determine the time left on the sleep timer.
+
