@@ -51,6 +51,13 @@ machine.pin_sleep_wakeup(wake_pins, machine.WAKEUP_ANY_HIGH, True)
 
 **be careful with the PULL_DOWN AND WAKE UP ANY HIGH, sometimes people use PULL UP and WAKEUP_ANY_HIGH and the system restarts constantly, Do you know why?**
 
+### time.ticks() ### 
+You can know how long each instruction takes to the memory process it
+``` python
+machinestarts=time.ticks_ms()
+instructions
+machinefinishes=time.ticks_ms()-machinestarts
+```
 ## Reading battery voltage ##
 Each shield allows you to read the battery voltage, though in a slightly different way.
 ``` python
@@ -61,3 +68,6 @@ vbat = bat_voltage.voltage()
 # note that the expansionboard 2.0 has a voltage divider of 115K / 56K to account for
 print('battery voltage:', vbat*1,5, 'mV')
 ```
+## Assignments ## 
+* Test each example with the CO2 sensor to check how sleep modes and reading the battery voltage work.
+* 
