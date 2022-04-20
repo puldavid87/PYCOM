@@ -48,3 +48,5 @@ Sometimes, we want to know the reason the board woke up, to differentiate the di
 wake_pins = [Pin('P10', mode=Pin.IN, pull=Pin.PULL_DOWN)]
 machine.pin_sleep_wakeup(wake_pins, machine.WAKEUP_ANY_HIGH, True)
 ```
+
+**be careful with the PULL_DOWN AND WAKE UP ANY HIGH, sometimes people use PULL UP and WAKEUP_ANY_HIGH and the system restarts constantly, Do you know why?**
