@@ -1,5 +1,5 @@
 # PYCOM
-Software development for pycom platform
+Software development for Pycom platform
 ## BASIC:
 Documentation: 
 [Pycom documentation](https://docs-mk2.readthedocs.io/en/latest/)
@@ -197,7 +197,7 @@ A synchronous serial interface always pairs its data line(s) with a clock signal
 Asynchronous means that data is transferred without support from an external clock signal. This transmission method is perfect for minimizing the required wires and I/O pins, but it does mean we need to put some extra effort into reliably transferring and receiving data. The serial protocol we'll be discussing in this tutorial is the most common form of asynchronous transfers. It is so common, in fact, that when most folks say “serial” they’re talking about this protocol (something you’ll probably notice throughout this tutorial) [Sparkfun](https://learn.sparkfun.com/tutorials/serial-communication/all).
 #### Functionality:
 
-In this course, serial communication is focused on sending messages to the computer for visualizations interfaces running on local computers.
+In this course, serial communication is focused on sending messages to the computer for visualization interfaces running on local computers.
 
 
 #### Libraries:
